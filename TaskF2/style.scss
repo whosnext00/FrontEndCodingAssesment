@@ -1,0 +1,53 @@
+$col-width: 152px;
+$quarter-high: 25px;
+$second-bgcolor: #2c8bb7;
+$main-sprite: url(//s.wlfcdn.com/giftcards/cms_proper/CMS-376/v1/dashboard-sprite.png);
+
+@mixin zero-pm(){
+	margin: 0;
+	padding: 0;
+}
+
+.current{
+		@include zero-pm();
+		display: block;
+		color: red;
+		background-image: $main-sprite;
+		background-position: -385px 0;
+		width: 166px !important;
+		height: 38px !important;
+		margin: 18px 3px 0 0 !important;
+		cursor: pointer;
+	ul{
+		margin: 0 0 0 9px !important;
+		border: 1px solid #9eb5c4;
+		width: $col-width;
+		background-color: $second-bgcolor;
+	}
+	ul li{
+		font-size: 11px;
+		width: $col-width;
+		height: $quarter-high;
+		border-bottom: 1px solid #88cff0;
+		background-color: $second-bgcolor;
+	}
+	ul li a{
+		width: $col-width;
+		height: $quarter-high;
+		line-height: $quarter-high;
+		color: #FFF;
+		text-decoration: none;
+		text-indent: 13px
+	}
+	ul li a:hover{
+		color: #d3f0fe;
+		width: $col-width;
+		background-color: #3ba4d5;
+	}
+	ul, ul li, ul li a, ul li a:hover{
+		@include zero-pm();
+	}
+	ul li a, ul li a:hover{
+		display: block;
+	}
+}
