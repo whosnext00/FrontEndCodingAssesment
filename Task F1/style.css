@@ -1,0 +1,24 @@
+div#wrapper{
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+label{
+	font-size: 18px;
+}
+
+input{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+label, input{
+	display: block;
+}
+
+.thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+ }
