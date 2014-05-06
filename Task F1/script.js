@@ -12,5 +12,5 @@ jQuery(document).ready(function($) {
 		})(f);
 		reader.readAsDataURL(f);
 	}
-	document.getElementById('my_img_upload_input').addEventListener('change', handleFileSelect, false);
+	document.getElementById('upload_input').addEventListener('change', handleFileSelect, false);
 });
